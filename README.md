@@ -3,5 +3,5 @@
   <title>pagina principal</title>
 </head>
 <body>
-  <a herf="Historia.html" style="color:aliceblue;">Historia</a><br>
+  <a herf="Historia.html" style="color:blue;">Historia</a><br>
 </body>
