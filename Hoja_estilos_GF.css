@@ -22,3 +22,48 @@ main{
     font-family: var(--fuente-principal);
 }
 
+.Historia{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.Historia_card{
+    display:flex;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow:hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.Historia_texto{
+    padding: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Historia_minitit{
+    font-weight: bold;
+    color: #ff6a5c;
+    font-size:1.2rem;
+}
+.Historia_card img{
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+.Historia p{
+    margin-top: 10px;
+    font-size:1.1rem;
+}
+.Historia_I:nth-child(even) .Historia_card{
+    flex-direction: row-reverse;
+}
+.Historia_I{
+    margin-bottom: 25px;
+}
+.Historia_I p{
+    margin-top: 10px;
+    font-size:1.1rem;
+}
