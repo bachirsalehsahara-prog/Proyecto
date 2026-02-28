@@ -151,8 +151,15 @@ iframe{
     max-width: 75em;
     margin:3.75em auto ;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     overflow: hidden;
+    border:0.1em solid #7a1c32;
+    transition:box-shadow 0.3 ease;
+}
+
+.contenedorEvento:hover{
+    box-shadow: 0 0.1em 0.2em rgba(0,0,0,0.3);
+    transform: translateY(-0.05em) scale(1.02);
 }
 
 .imgEvento{
