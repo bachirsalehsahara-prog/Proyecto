@@ -1,3 +1,7 @@
+    /*Para que el menú no se corte por la derecha*/
+*{
+    box-sizing: border-box;
+}
 :root{
     --fuente-principal: Arial, Helvetica, sans-serif;
     --fuente-titulos: "Times New Roman", serif;
@@ -30,6 +34,11 @@ header{
     background: var(--color-letra-s);
     box-shadow: 0 2px 10px rgba(0,0,0,.08);
     font-family: var(--fuente-titulos);
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top:0;
+    width: 100%;
 }
 
 .menu > a{
