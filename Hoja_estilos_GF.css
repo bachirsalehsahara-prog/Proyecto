@@ -1,8 +1,14 @@
 :root{
     --fuente-principal: Arial, Helvetica, sans-serif;
-    /*color de letra de la cabecera y color del fondo de la cabecera*/
-    --color-letra-hr: rgb(255, 255, 255);
-    --fondo-hr: hsl(0, 0%, 0%);
+    --fuente-titulos: "Times New Roman", serif;
+    /*color de letra de la cabecera*/
+    --color-letra-hr: #8b1538;
+    /*color de la letra de los títulos*/
+    --color-letra-t: hsl(53, 55%, 47%);
+    /*color letra principal*/
+    --color-letra-p: black;
+    /*color letra secundaria*/
+    --color-letra-s: white;
     /*posición párrafos*/
     --posicion-p: justify;
     /*posición títulos*/
@@ -10,88 +16,132 @@
 }
 
 header{
-    background-color: var(--fondo-hr);
     color: var(--color-letra-hr);
     text-align: var(--posicion-t);
     font-size: 3rem;
+    font-family: var(--fuente-titulos);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    background: var(--color-letra-s);
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    font-family: var(--fuente-titulos);
+}
+
+.menu > a{
+    text-decoration: none;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.menu h2{
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--color-letra-hr);
+    margin: 0;
+}
+
+.menu p{
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--color-letra-p);
+    font-family: var(--fuente-principal);
+}
+
+.pags{
+    display:flex; 
+    flex-wrap: nowrap; 
+    gap: 2rem;
+    align-items: end;
+}
+
+.pag{
+    position: relative; 
+    font-size: 1rem;
+    color: var(--color-letra-p);
+    padding: 0.25em;
+    text-decoration: none;
+    font-family: var(--fuente-principal);
+}
+
+.pag.activo{
+    color: var(--color-letra-hr);
+
+}
+
+.pag::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-letra-t);
+    transition: width 0.25s ease;
+}
+
+.pag:hover::after {
+    width: 100%;
+}
+
+.pag.activo::after {
+    width: 100%;
+}
+
+.pag:hover{
+    color: var(--color-letra-hr);
+}
+
+.sub{
+    color: var(--color-letra-p);
+    font-size: 0.5em;
     font-family: var(--fuente-principal);
 }
 
 main{
     text-align: var(--posicion-p);
     font-family: var(--fuente-principal);
+    color: var(--color-letra-p)
 }
 
-.Historia{
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    margin-top: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.secciones{
+    display:flex; 
+    flex-wrap: wrap; 
+    justify-content: var(--posicion-t); 
+    gap: 0.05em;
 }
-.Historia_card{
-    display:flex;
-    gap: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    overflow:hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+.caja{
+    text-decoration: none;
+    background-color: var(--color-letra-hr);  
+    padding: 1rem; 
+    margin: 0.25rem;
+    color: var(--color-letra-s)
 }
-.Historia_texto{
-    padding: 20px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+
+h2{
+    text-align: var(--posicion-t);
+    color: var(--color-letra-t);
 }
-.Historia_minitit{
-    font-weight: bold;
-    color: #ff6a5c;
-    font-size:1.2rem;
+
+img{
+    border: 3px solid var(--color-letra-hr); 
+    display: block; 
+    margin: auto; 
+    width: 30%;
+    height: 300px;
 }
-.Historia_card img{
-    width: 300px;
-    height: 100%;
-    object-fit: cover;
-}
-.Historia p{
-    margin-top: 10px;
-    font-size:1.1rem;
-}
-.Historia_I:nth-child(even) .Historia_card{
-    flex-direction: row-reverse;
-}
-.Historia_I{
-    margin-bottom: 25px;
-}
-.Historia_I p{
-    margin-top: 10px;
-    font-size:1.1rem;
-}
-.Actos{
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 0 20px;
-    text-align: center;
-}
-.Actos h2{
-  margin: 20px auto;
-  max-width: 700px;
-  font-size:1.1rem;
-}
-.Actos_I{
-    display:flex;
-    gap: 20px;
-    flex-wrap:wrap;
-    justify-content: center;
-}
-.Actos_card{
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 25px 20px;
-    transition: transform 0.3s ease;
-}
-.Actos_card:hover{
-    transform: translateY(-8px);
+
+iframe{
+    border: 3px solid var(--color-letra-t); 
+    margin:20px auto; 
+    display: block;
+    width: 50%;
+    height: 400px;
 }
