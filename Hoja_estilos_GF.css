@@ -67,3 +67,31 @@ main{
     margin-top: 10px;
     font-size:1.1rem;
 }
+.Actos{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+.Actos h2{
+  margin: 20px auto;
+  max-width: 700px;
+  font-size:1.1rem;
+}
+.Actos_I{
+    display:flex;
+    gap: 20px;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.Actos_card{
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 25px 20px;
+    transition: transform 0.3s ease;
+}
+.Actos_card:hover{
+    transform: translateY(-8px);
+}
