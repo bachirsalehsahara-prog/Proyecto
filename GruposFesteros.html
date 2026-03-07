@@ -5,8 +5,8 @@
         <meta name="author" content="Tania Rubio Porras">
         <meta name="description" content="Los diferentes Grupos Festeros de Almansa">
         <meta name="keywords" content="Grupos Festeros, Almansa, Fiestas Mayores, Fiestas de Mayo">
-        <meta name="viewport" content="device-width">
         <link rel="stylesheet" href="Hoja_estilos_GF.css">
+        <script src="Javascript-Carrusel.js" defer></script>
         <title>Grupos Festeros</title>
     </head>
     <body>
@@ -41,55 +41,453 @@
             </nav>
             <section class="pilar">
                 <h2><b><u>Virgen del Pilar</u></b></h2>
-                <img src="Fotos/Pilar.jpg">
+                <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Pilar.jpg"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Pilar.jpg"
+                            data-full="Fotos/Pilar.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero Virgen del Pilar">
+                        <img class="mini"
+                            src="Fotos/GrupoPilar.jpeg"
+                            data-full="Fotos/GrupoPilar.jpeg"
+                            alt="Miembros 2019"
+                            title="Miembros del Grupo Festero Virgen del Pilar en 2019">
+                        <img class="mini"
+                            src="Fotos/AbanderadaPilar2023.jpg"
+                            data-full="Fotos/AbanderadaPilar2023.jpg"
+                            alt="Abanderada y acompañante 2023"
+                            title="Abanderada y acompañante del Grupo Festero Virgen del Pilar en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilPilar2023.jpg"
+                            data-full="Fotos/AbanderadaInfantilPilar2023.jpg"
+                            alt="Abanderada Infantil y acompañante 2023"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Virgen del Pilar en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaPilar2024.jpg"
+                            data-full="Fotos/AbanderadaPilar2024.jpg"
+                            alt="Abanderada y acompañante 2024"
+                            title="Abanderada y acompañante del Grupo Festero Virgen del Pilar en 2024">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilPilar2024.jpg"
+                            data-full="Fotos/AbanderadaInfantilPilar2024.jpg"
+                            alt="Abanderada Infantil y acompañante 2024"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Virgen del Pilar en 2024">
+                        <img class="mini activa"
+                            src="Fotos/PuertaSedePilar.jpg"
+                            data-full="Fotos/PuertaSedePilar.jpg"
+                            alt="Sede"
+                            title="Exterior de la sede del Grupo Festero Virgen del Pilar en la Calle Ramón y Cajal">
+                    </div>
+                </div>
                 <p>La sede de este grupo festero se encuentra en la calle Ramón y Cajal, Nº4.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6213.027735687715!2d-1.105103288333803!3d38.86648347161281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614f002cb37a9b%3A0xceac8eaef771b2a8!2sGrupo%20Festero%20Virgen%20del%20Pilar!5e0!3m2!1ses!2ses!4v1772279315893!5m2!1ses!2ses"></iframe>
             </section>
-            <section class="rincon">
-                <h2><b><u> Rincón</u></b></h2>
-                <img src="Fotos/Rincon.jpg">
+            <section id="rincon">
+                <h2><b><u>El Rincón</u></b></h2>
+                 <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Rincon.jpg"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Rincon.jpg"
+                            data-full="Fotos/Rincon.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero El Rincón">
+                        <img class="mini"
+                            src="Fotos/MiembrosRincon.jpg"
+                            data-full="Fotos/MiembrosRincon.jpg"
+                            alt="Miembros Rincon"
+                            title="Miembros del Grupo Festero El Rincon">
+                        <img class="mini"
+                            src="Fotos/DesfileRincon.jpg"
+                            data-full="Fotos/DesfileRincon.jpg"
+                            alt="Desfile donde aparace El Rincón"
+                            title="El Grupo Festero El Rincón desfilando">
+                        <img class="mini"
+                            src="Fotos/ParaguasRincon.jpg"
+                            data-full="Fotos/ParaguasRincon.jpg"
+                            alt="Actuación El Rincón en desfile"
+                            title="Actuación del Grupo Festero El Rincón en desfile con paraguas">
+                    </div>
+                </div>
                 <p>La sede de este grupo festero se encuentra en la calle Ramón y Cajal, Nº9.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6213.083291405551!2d-1.1040038883338936!3d38.86584777161304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614efc9adb408b%3A0xf1b13f82fefced9c!2sC.%20Ram%C3%B3n%20y%20Cajal%2C%209%2C%2002640%20Almansa%2C%20Albacete!5e0!3m2!1ses!2ses!4v1772279134744!5m2!1ses!2ses"></iframe>
             </section>
-            <section class="mn">
+            <section id="mn">
                 <h2><b><u>Méndez Núñez</u></b></h2>
-                <img src="Fotos/Mendez.jpg">
+                <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Mendez.jpg"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Mendez.jpg"
+                            data-full="Fotos/Mendez.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero Virgen del Pilar">
+                        <img class="mini"
+                            src="Fotos/MiembrosMendez.jpeg"
+                            data-full="Fotos/MiembrosMendez.jpeg"
+                            alt="Miembros"
+                            title="Miembros del Grupo Festero Méndez Núñez">
+                        <img class="mini"
+                            src="Fotos/AbanderadaMendez2023.jpg"
+                            data-full="Fotos/AbanderadaMendez2023.jpg"
+                            alt="Abanderada y acompañante 2023"
+                            title="Abanderada y acompañante del Grupo Festero Méndez Núñez en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilMendez2023.jpg"
+                            data-full="Fotos/AbanderadaInfantilMendez2023.jpg"
+                            alt="Abanderada Infantil y acompañante 2023"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Méndez Núñez en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaMendez2024.jpg"
+                            data-full="Fotos/AbanderadaMendez2024.jpg"
+                            alt="Abanderada y acompañante 2024"
+                            title="Abanderada y acompañante del Grupo Festero Méndez Núñez en 2024">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilMendez2024.jpg"
+                            data-full="Fotos/AbanderadaInfantilMendez2024.jpg"
+                            alt="Abanderada Infantil y acompañante 2024"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Méndez Núñez en 2024">
+                        <img class="mini activa"
+                            src="Fotos/SedeMendez.png"
+                            data-full="Fotos/SedeMendez.png"
+                            alt="Sede"
+                            title="Exterior de la sede del Grupo Festero Méndez Núñez en la esquina de Pérez Galdós con Méndez Núñez">
+                    </div>
+                </div>
                 <p>La sede de este grupo festero se encuentra en la calle Pérez Galdós, Nº5.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6213.090586263652!2d-1.1033969490209805!3d38.86576429906356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614efd102364dd%3A0xb0fbfe23821acb3c!2sGRUPO%20FESTERO%20MENDEZ%20NU%C3%91EZ!5e0!3m2!1ses!2ses!4v1772279249134!5m2!1ses!2ses"></iframe>
             </section>
-            <section class="estudiantes">
+            <section id="estudiantes">
                 <h2><b><u>Santa Lucía - Estudiantes</u></b></h2>
-                <img src="Fotos/Estudiantes.jpg">
+                <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Estudiantes.jpg"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Estudiantes.jpg"
+                            data-full="Fotos/Estudiantes.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero Santa Lucía - Estudiantes">
+                        <img class="mini"
+                            src="Fotos/MiembrosEstudiantes.jpeg"
+                            data-full="Fotos/MiembrosEstudiantes.jpeg"
+                            alt="Miembros"
+                            title="Miembros del Grupo Festero Santa Lucía - Estudiantes">
+                        <img class="mini"
+                            src="Fotos/AbanderadaEstudiantes2023.jpg"
+                            data-full="Fotos/AbanderadaEstudiantes2023.jpg"
+                            alt="Abanderada y acompañante 2023"
+                            title="Abanderada y acompañante del Grupo Festero Santa Lucía - Estudiantes en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilEstudiantes2023.jpg"
+                            data-full="Fotos/AbanderadaInfantilEstudiantes2023.jpg"
+                            alt="Abanderada Infantil y acompañante 2023"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Santa Lucía - Estudiantes en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaEstudiantes2024.jpg"
+                            data-full="Fotos/AbanderadaEstudiantes2024.jpg"
+                            alt="Abanderada y acompañante 2024"
+                            title="Abanderada y acompañante del Grupo Festero Santa Lucía - Estudiantes en 2024">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilEstudiantes2024.jpg"
+                            data-full="Fotos/AbanderadaInfantilEstudiantes2024.jpg"
+                            alt="Abanderada Infantil y acompañante 2024"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Santa Lucía - Estudiantes en 2024">
+                        <img class="mini activa"
+                            src="Fotos/SedeEstudiantes.png"
+                            data-full="Fotos/SedeEstudiantes.png"
+                            alt="Sede"
+                            title="Exterior de la sede del Grupo Festero Santa Lucía - Estrella en la calle Santa Lucía">
+                    </div>
+                </div>
                 <p>La sede de este grupo festero se encuentra en la calle Santa Lucía, Nº5.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.4430766009928!2d-1.1032469490203365!3d38.86810349906183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614ee2c91b5ff5%3A0x95708367c3f56020!2sCalle%20Sta.%20Lucia%2C%205%2C%2002640%20Almansa%2C%20Albacete!5e0!3m2!1ses!2ses!4v1772279483236!5m2!1ses!2ses"></iframe>
             </section>
-            <section class="vitorero">
+            <section id="vitorero">
                 <h2><b><u>Vitorero</u></b></h2>
-                <img src="Fotos/Vitorero.jpg">
+                <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Vitorero.jpg"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Vitorero.jpg"
+                            data-full="Fotos/Vitorero.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero Vitorero">
+                        <img class="mini"
+                            src="Fotos/MiembrosVitorero.jpeg"
+                            data-full="Fotos/MiembrosVitorero.jpeg"
+                            alt="Miembros"
+                            title="Miembros del Grupo Festero Vitorero">
+                        <img class="mini"
+                            src="Fotos/AbanderadaVitorero2023.jpg"
+                            data-full="Fotos/AbanderadaVitorero2023.jpg"
+                            alt="Abanderada y acompañante 2023"
+                            title="Abanderada y acompañante del Grupo Festero Vitorero en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilVitorero2023.jpg"
+                            data-full="Fotos/AbanderadaInfantilVitorero2023.jpg"
+                            alt="Abanderada Infantil y acompañante 2023"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Vitorero en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaVitorero2024.jpg"
+                            data-full="Fotos/AbanderadaVitorero2024.jpg"
+                            alt="Abanderada y acompañante 2024"
+                            title="Abanderada y acompañante del Grupo Festero Vitorero en 2024">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilVitorero2024.jpg"
+                            data-full="Fotos/AbanderadaInfantilVitorero2024.jpg"
+                            alt="Abanderada Infantil y acompañante 2024"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Vitorero en 2024">
+                    </div>
+                </div>
                 <p>La sede de este grupo festero se encuentra en la calle José Echegaray, Nº8.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6213.165788968189!2d-1.1005220883338869!3d38.86490377161315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614efd9e5878af%3A0x6e8c0e5adf06554e!2sC.%20Jos%C3%A9%20Echegaray%2C%208%2C%2002640%20Almansa%2C%20Albacete!5e0!3m2!1ses!2ses!4v1772279563126!5m2!1ses!2ses"></iframe>
             </section>
-            <section class="estrella">
+            <section id="estrella">
                 <h2><b><u>La Estrella</u></b></h2>
-                <img src="Fotos/Estrella.jpg">
+                <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Estrella.jpg"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Estrella.jpg"
+                            data-full="Fotos/Estrella.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero La Estrella">
+                        <img class="mini"
+                            src="Fotos/MiembrosEstrella.jpeg"
+                            data-full="Fotos/MiembrosEstrella.jpeg"
+                            alt="Miembros"
+                            title="Miembros del Grupo Festero La Estrella">
+                        <img class="mini"
+                            src="Fotos/AbanderadaEstrella2023.jpg"
+                            data-full="Fotos/AbanderadaEstrella2023.jpg"
+                            alt="Abanderada y acompañante 2023"
+                            title="Abanderada y acompañante del Grupo Festero La Estrella en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilEstrella2023.jpg"
+                            data-full="Fotos/AbanderadaInfantilEstrella2023.jpg"
+                            alt="Abanderada Infantil y acompañante 2023"
+                            title="Abanderada Infantil y acompañante del Grupo Festero La Estrella en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaEstrella2024.jpg"
+                            data-full="Fotos/AbanderadaEstrella2024.jpg"
+                            alt="Abanderada y acompañante 2024"
+                            title="Abanderada y acompañante del Grupo Festero La Estrella en 2024">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilEstrella2024.jpg"
+                            data-full="Fotos/AbanderadaInfantilEstrella2024.jpg"
+                            alt="Abanderada Infantil y acompañante 2024"
+                            title="Abanderada Infantil y acompañante del Grupo Festero La Estrella en 2024">
+                        <img class="mini activa"
+                            src="Fotos/SedeEstrella.png"
+                            data-full="Fotos/SedeEstrella.png"
+                            alt="Sede"
+                            title="Exterior de la sede del Grupo Festero La Estrella en el Paseo las Huertas">
+                    </div>
+                </div>
                 <p>La sede de este grupo festero se encuentra en el Paseo las Huertas, Nº8D.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6212.485745475995!2d-1.097247088333507!3d38.872684771611496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614f1dd33b4473%3A0xca0b2968332eb0d9!2sP.%C2%BA%20las%20Huertas%2C%208D%2C%2002640%20Almansa%2C%20Albacete!5e0!3m2!1ses!2ses!4v1772279611340!5m2!1ses!2ses"></iframe>
             </section>
-            <section class="olla">
+            <section id="olla">
                 <h2><b><u>La Olla</u></b></h2>
-                <img src="Fotos/Olla.jpg">
+                <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Olla.jpg"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Olla.jpg"
+                            data-full="Fotos/Olla.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero La Olla">
+                        <img class="mini"
+                            src="Fotos/MiembrosOlla.jpeg"
+                            data-full="Fotos/MiembrosOlla.jpeg"
+                            alt="Miembros"
+                            title="Miembros del Grupo Festero La Olla">
+                        <img class="mini"
+                            src="Fotos/AbanderadaOlla2023.jpg"
+                            data-full="Fotos/AbanderadaOlla2023.jpg"
+                            alt="Abanderada y acompañante 2023"
+                            title="Abanderada y acompañante del Grupo Festero La Olla en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilOlla2023.jpg"
+                            data-full="Fotos/AbanderadaInfantilOlla2023.jpg"
+                            alt="Abanderada Infantil y acompañante 2023"
+                            title="Abanderada Infantil y acompañante del Grupo Festero La Olla en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaOlla2024.jpg"
+                            data-full="Fotos/AbanderadaOlla2024.jpg"
+                            alt="Abanderada y acompañante 2024"
+                            title="Abanderada y acompañante del Grupo Festero La Olla en 2024">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilOlla2024.jpg"
+                            data-full="Fotos/AbanderadaInfantilOlla2024.jpg"
+                            alt="Abanderada Infantil y acompañante 2024"
+                            title="Abanderada Infantil y acompañante del Grupo Festero La Olla en 2024">
+                    </div>
+                </div>
                 <p>La sede de este grupo festero se encuentra en la calle de Aragón, Nº21.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.3356207605702!2d-1.0981164883336267!3d38.87056247161195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614f1da16ca7a3%3A0xb4ea343d7a9ebdc8!2sC.%20de%20Arag%C3%B3n%2C%2021%2C%2002640%20Almansa%2C%20Albacete!5e0!3m2!1ses!2ses!4v1772279668964!5m2!1ses!2ses"></iframe>
             </section>
-            <section class="boinas">
+            <section id="boinas">
                 <h2><b><u>Boinas Negras</u></b></h2>
-                <img src="Fotos/Boinas.png">
-                <p>La sede de este grupo festero se encuentra en la calle Pedro Leal, Nº21.</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.3453441319957!2d-1.101935688333628!3d38.870339971611905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614ee3aab5ca01%3A0x567e4194d91e39e0!2sC.%20Pedro%20Leal%2C%2021%2C%2002640%20Almansa%2C%20Albacete!5e0!3m2!1ses!2ses!4v1772280143594!5m2!1ses!2ses"></iframe>
+                <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Boinas.png"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Boinas.png"
+                            data-full="Fotos/Boinas.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero Boinas Negras">
+                        <img class="mini"
+                            src="Fotos/MiembrosBoinas.jpg"
+                            data-full="Fotos/MiembrosBoinas.jpeg"
+                            alt="Miembros"
+                            title="Miembros del Grupo Festero Boinas Negras">
+                        <img class="mini"
+                            src="Fotos/AbanderadaBoinas2023.jpg"
+                            data-full="Fotos/AbanderadaBoinas2023.jpg"
+                            alt="Abanderada y acompañante 2023"
+                            title="Abanderada y acompañante del Grupo Festero Boinas Negras en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilBoinas2023.jpg"
+                            data-full="Fotos/AbanderadaInfantilBoinas2023.jpg"
+                            alt="Abanderada Infantil y acompañante 2023"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Boinas Negras en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaBoinas2024.jpg"
+                            data-full="Fotos/AbanderadaBoinas2024.jpg"
+                            alt="Abanderada y acompañante 2024"
+                            title="Abanderada y acompañante del Grupo Festero Boinas Negras en 2024">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilBoinas2024.jpg"
+                            data-full="Fotos/AbanderadaInfantilBoinas2024.jpg"
+                            alt="Abanderada Infantil y acompañante 2024"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Boinas Negras en 2024">
+                        <img class="mini activa"
+                            src="Fotos/SedeBoinas.png"
+                            data-full="Fotos/SedeBoinas.png"
+                            alt="Sede"
+                            title="Exterior de la sede del Grupo Festero Boinas Negras en la calle San José">
+                    </div>
+                </div>
+                <p>La sede de este grupo festero se encuentra en la calle San José, Nº5.</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923.4991620090999!2d-1.1012518336257415!3d38.87209746825922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614ee3c1919cd5%3A0xd38cc624b34c87d7!2sGrupo%20Festero%20Boinas%20Negras!5e0!3m2!1ses!2ses!4v1772904318849!5m2!1ses!2ses"></iframe>
             </section>
-            <section class="manchegos">
+            <section id="manchegos">
                 <h2><b><u>Los Manchegos</u></b></h2>
-                <img src="Fotos/Manchegos.jpg">
+                <div class="galeria">
+                    <div class="principal">
+                        <img class="img-principal"
+                            src="Fotos/Manchegos.jpg"
+                            alt="Logo">
+                    </div>
+                    <div class="controles">
+                        <button class="anterior">Anterior</button>
+                        <button class="siguiente">Siguiente</button>
+                    </div>
+                    <div class="miniaturas">
+                        <img class="mini activa"
+                            src="Fotos/Manchegos.jpg"
+                            data-full="Fotos/Manchegos.jpg"
+                            alt="Logo"
+                            title="Logo del Grupo Festero Los Manchegos">
+                        <img class="mini"
+                            src="Fotos/MiembrosManchegos.jpg"
+                            data-full="Fotos/MiembrosManchegos.jpg"
+                            alt="Miembros"
+                            title="Miembros del Grupo Festero Los Manchegos">
+                        <img class="mini"
+                            src="Fotos/AbanderadaManchegos2023.jpg"
+                            data-full="Fotos/AbanderadaManchegos2023.jpg"
+                            alt="Abanderada y acompañante 2023"
+                            title="Abanderada y acompañante del Grupo Festero Los Manchegos en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilManchegos2023.jpg"
+                            data-full="Fotos/AbanderadaInfantilManchegos2023.jpg"
+                            alt="Abanderada Infantil y acompañante 2023"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Los Manchegos en 2023">
+                        <img class="mini"
+                            src="Fotos/AbanderadaManchegos2024.jpg"
+                            data-full="Fotos/AbanderadaManchegos2024.jpg"
+                            alt="Abanderada y acompañante 2024"
+                            title="Abanderada y acompañante del Grupo Festero Los Manchegos en 2024">
+                        <img class="mini"
+                            src="Fotos/AbanderadaInfantilManchegos2024.jpg"
+                            data-full="Fotos/AbanderadaInfantilManchegos2024.jpg"
+                            alt="Abanderada Infantil y acompañante 2024"
+                            title="Abanderada Infantil y acompañante del Grupo Festero Los Manchegos en 2024">
+                        <img class="mini activa"
+                            src="Fotos/SedeManchegos.png"
+                            data-full="Fotos/SedeManchegos.png"
+                            alt="Sede"
+                            title="Exterior de la sede del Grupo Festero Los Manchegos en la calle Maestro Justo Mas">
+                    </div>
+                </div>
                 <p>La sede de este grupo festero se encuentra en la calle Maestro Justo Mas, Nº3.</p>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.2994549871705!2d-1.103821720936667!3d38.87139004393755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd614ee44b056eb1%3A0xfd2a0fff47e63b73!2sC.%20Maestro%20Justo%20Mas%2C%203%2C%2002640%20Almansa%2C%20Albacete!5e0!3m2!1ses!2ses!4v1772280295378!5m2!1ses!2ses"></iframe>
             </section>
