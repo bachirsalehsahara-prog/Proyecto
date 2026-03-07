@@ -117,6 +117,8 @@ header{
     font-family: var(--fuente-principal);
 }
 
+/*Parte de Tania*/
+
 main{
     text-align: var(--posicion-p);
     font-family: var(--fuente-principal);
@@ -143,12 +145,74 @@ h2{
     color: var(--color-letra-t);
 }
 
-img{
+.galeria{
+    max-width:800px;
+    margin:0 auto;
+    background:var(--color-letra-s);
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.principal{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.img-principal{
+    width:100%;
+    max-height:400px;
+    object-fit:contain;
+    border-radius:10px;
     border: 3px solid var(--color-letra-hr); 
-    display: block; 
-    margin: auto; 
-    width: 30%;
-    height: 300px;
+}
+
+.miniaturas{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-top:10px;
+}
+
+.miniaturas img{
+    width:120px;
+    height:80px;
+    object-fit:cover;
+    border-radius:6px;
+    cursor:pointer;
+    opacity:0.7;
+    border:2px solid transparent;
+    transition:opacity .2s, border-color .2s;
+}
+
+.miniaturas img:hover{
+    opacity:1;
+}
+
+.miniaturas img.activa{
+    opacity:1;
+    border-color:var(--color-letra-t);
+}
+
+.controles{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:15px;
+}
+
+.controles button{
+    padding:10px 20px;
+    border:none;
+    background:var(--color-letra-hr);
+    color:var(--color-letra-s);
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer; 
+}
+
+.controles button:hover{
+    background:var(--color-letra-t);
 }
 
 iframe{
@@ -304,3 +368,4 @@ h1 {
     background-position: center; 
     background-repeat: no-repeat      
 } 
+
