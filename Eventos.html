@@ -4,46 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos de las Fiestas Mayores de Almansa</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="Hoja_estilos_GF.css">
 </head>
 <body>
-    <!--Estilo provisional para ir probando-->
-    <style>
-        .fondoImagen{
-            width:100%;
-            height: 10em;
-            background-image: url(../imagenes-eventos/imagen-encabezado-eventos.png);
-            background-size:cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    </style>
-
     <header>
-        <div>
-                <!--Menú-->
+            <!--Menú-->
+        <div class="menu">
             <a href="Inicio.html">
                 <h2>Fiestas Mayores</h2>
                 <p>Almansa</p>     
             </a>
-            <nav>
-                <a href="Inicio.html">Inicio</a>
-                <a href="">Comparsas Moras</a>
-                <a href="Eventos.html">Eventos</a>
-                <a href="">Grupos festeros</a>
-                <a href="Historia.html">Historia de las Fiestas</a>
+            <nav class="pags">
+                <a class="pag" href="Inicio.html">Inicio</a>
+                <a class="pag" href="Comparsas.html">Comparsas</a>
+                <a class="pag activo" href="Eventos.html">Eventos</a>
+                <a class="pag" href="GruposFesteros.html">Grupos festeros</a>
+                <a class="pag" href="Historia.html">Historia de las Fiestas</a>
             </nav>
 
         </div>
-        
-
-        <div class="fondoImagen">  
-                <!--Encabezado-->
-            <h1>Eventos Fiestas Mayores de Almansa</h1>
-            <h3>Los actos más emblemáticos de nuestras fiestas de mayo</h3>
+            <!--Encabezado-->
+        <div>  
+            <h2>Eventos Fiestas Mayores de Almansa</h2>
+            <h4 class="sub">Los actos más emblemáticos de nuestras fiestas de mayo</h4>
         </div>
-            
-
     </header>
+        <!--Submenú-->
+    <main>
+        <h2>Eventos Principales</h2>
+        <nav class="secciones">
+            <a class="caja" href="#entradaMora">Entrada Mora</a>
+            <a class="caja" href="#entradaCristiana">Entrada Cristiana</a>
+            <a class="caja" href="#embajadaMora">Embajada Mora</a>
+            <a class="caja" href="#embajadaCristiana">Embajada Cristiana</a>
+            <a class="caja" href="#ofrenda">Ofrenda Floral</a>
+            <a class="caja" href="#serenata">Serenata</a>
+            <a class="caja" href="#procesion">Procesión en honor a la Virgen de Belén</a>
+
+        </nav>
+            <!--Entrada Mora-->
+        <section class="contenedorEvento" id="entradaMora">
+            <div class="imgEvento">
+                <a href="https://www.youtube.com/live/S3SdKBYQs6I?si=9XtKUTEES4jZvRvU" target="_blank">
+                    <img src="img-eventos/entrada-mora.jpg" alt="Entrada Mora" title="Ver Entrada Mora">
+                </a>
+            </div>
+            <div class="textoEvento">
+                <h2 class="tituloEvento">Entrada Mora</h2>
+                <p class="descripcionEvento">
+                    La Entrada Mora es uno de los actos más destacados y espectaculares de las Fiestas Mayores de Almansa.
+                    Se celebra el 1 de mayo a las 17:45 y consiste en un desfile triunfal de las huestes del bando moro, que
+                    avanzan por la calles de la ciudad hasta el Castillo de Almansa.
+                </p>
+            </div>
+        </section>
+            <!--Entrada Cristiana-->
+        <section class="contenedorEvento" id="entradaCristiana">
+            <div class="textoEvento">
+                <h2 class="tituloEvento">Entrada Cristiana</h2>
+                <p class="descripcionEvento">
+                    La Entrada Cristiana es uno de los actos centrales de las Fiestas mayores de Almansa,
+                    celebrado el 3 de mayo a las 18:15 como parte de la representación de la Reconquista de la
+                    Península Ibérica. Este desfile triunfal conmemora la entrada de las huestes cristianas tras
+                    recuperar la fortaleza de Almansa del dominio moro.
+                </p>
+            </div>
+            <div class="imgEvento">
+                <a href="https://www.youtube.com/live/wC46RUa93q4?si=yD-IsxKQ5ie5Xnef" target="_blank">
+                    <img src="img-eventos/entrada-cristiana.jpg" alt="Entrada Cristiana" title="Ver Entrada Cristiana">
+                </a>
+            </div>
+        </section>
+            <!--Embajada Mora-->
+        <section class="contenedorEvento" id="embajadaMora">
+            <div class="imgEvento">
+                <a href="https://youtu.be/snsrBQq1zDI?si=VZphVxaMDETIrFji" target="_blank">
+                    <img src="img-eventos/embajada-mora.jpg" alt="Embajada Mora" title="Ver Embajada Mora">
+                </a>
+            </div>
+            <div class="textoEvento">
+                <h2 class="tituloEvento">Embajada Mora</h2>
+                <p class="descripcionEvento">
+                    La Embajada Mora Nocturna es el acto centras más destacado de las Fiestas
+                    Mayores de Almansa, celebrado cada año en la  noche del 2 al 3 de mayo.
+                    Se trata de una representación escénica que combina historia, mito, y efectos
+                    especiales, con grandes despliegues de pirotecnia, luces, música y actuaciones
+                    los embajadores.
+                </p>
+            </div>
+        </section>
+            <!--Embajada Cristiana-->
+        <section class="contenedorEvento" id="embajadaCristiana">
+            <div class="textoEvento">
+                <h2 class="tituloEvento">Embajada Cristiana</h2>
+                <p class="descripcionEvento">
+                    La Embajada Cristiana en las Fiestas de Mayo es uno de los actos centrales
+                    de las celebraciones de Moros y Cristianos, que se celebra el día 4 de mayo
+                    a las 12:30. Este evento representa la respuesta cristiana a la embajada mora y
+                    culmina con el momento más emotivo: la Conversión del Moro, en el que el representante
+                    moro se arrodilla ante la imagen de la Virgen de Belén, ubicada en la fachada de la
+                    iglesia arciprestal de la Asunción, y se convierte al cristianismo.    
+                </p>
+            </div>
+            <div class="imgEvento">
+                <a href="https://youtu.be/GTix1T0jUFU?si=78Zznczpr6siCWro" target="_blank">
+                    <img src="img-eventos/embajada-cristiana.jpg" alt="Embajada Cristiana" title="Ver Embajada Cristiana">
+                </a>
+            </div>
+        </section>
+            <!--Ofrenda Floral-->
+        <section class="contenedorEvento" id="ofrenda">
+            <div class="imgEvento">
+                <a href="https://www.youtube.com/live/ybzsyA6AXXw?si=jKQdn7HG-ZQfafaS" target="_blank">
+                    <img src="img-eventos/ofrenda-floral.jpg" alt="Ofrenda Floral" title="Ver Ofrenda Floral">
+                </a>
+            </div>
+            <div class="textoEvento">
+                <h2 class="tituloEvento">Ofrenda Floral</h2>
+                <p class="descripcionEvento">
+                    La Ofrenda Floral a la Virgen de Belén es uno de los actos más destacados y emotivos de
+                    las Fiestas Mayores de Almansa, celebrado tradicionalmente el 5 de mayo.  Este evento,
+                    que comenzó en 1950 con motivo del 25 aniversario de la coronación de la Virgen, consiste
+                    en un desfile multitudinario en el que cientos de parejas, grupos festeros, asociaciones, 
+                    autoridades y ciudadanos llevan sus ramos de flores desde distintos puntos de la ciudad
+                    hasta la Plaza de Santa María, donde depositan sus ofrendas ante la imagen de la Virgen de Belén.
+                </p>
+            </div>
+        </section>
+          <!--Serenata-->
+        <section class="contenedorEvento" id="serenata">
+            <div class="textoEvento">
+                <h2 class="tituloEvento">Serenata</h2>
+                <p class="descripcionEvento">
+                    La Serenata a la Virgen de Belén es uno de los actos más emotivos y tradicionales de las Fiestas 
+                    Mayores de Almansa, celebrado cada año en honor a la patrona de la ciudad.  Se realiza a medianoche, 
+                    generalmente el día 6 de mayo, en la Plaza de Santa María, frente a la iglesia arciprestal de la Asunción. 
+                    Durante este momento solemne, colectivos festeros, comparsas de moros y cristianos, bandas y charangas 
+                    recorren las calles en procesión hasta el lugar de la celebración, donde la imagen de la Virgen de Belén, 
+                    iluminada y rodeada de grandes gradas florales, es honrada con interpretaciones de marchas moras y cristianas.
+                </p>
+            </div>
+            <div class="imgEvento">
+                <a href="https://youtu.be/-eEq_QLP4Go?si=GvCbfsOWRQV-b7aw" target="_blank">
+                    <img src="img-eventos/serenata.jpg" alt="Serenata" title="Ver Serenata">
+                </a>
+            </div>
+        </section>
+            <!--Procesión-->
+        <section class="contenedorEvento" id="procesion">
+            <div class="imgEvento">
+                <a href="https://www.youtube.com/live/Ldp7dZJ7CMM?si=cVruDypESuM9Jbxc" target="_blank">
+                    <img src="img-eventos/procesion.jpg" alt="Procesión" title="Ver Procesión">
+                </a>
+            </div>
+            <div class="textoEvento">
+                <h2 class="tituloEvento">Procesión</h2>
+                <p class="descripcionEvento">
+                    La Procesión Mayor de Nuestra Señora de Belén es el acto central y más emotivo de las Fiestas Mayores de Almansa,
+                    celebrado el 6 de mayo, día de la festividad de la Virgen de Belén, la patrona de la ciudad. La celebración 
+                    combina elementos religiosos, folclóricos y tradicionales, con cánticos, música y la presencia de la imagen de la Virgen. 
+                    Al finalizar la procesión, se realiza un castillo de fuegos artificiales piromusical desde las escaleras del Castillo de Almansa, 
+                    que marca simbólicamente el cierre oficial de las Fiestas Mayores. 
+                </p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
