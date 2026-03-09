@@ -7,6 +7,9 @@
     box-sizing: border-box;
 }
 :root{
+    /*fondo de la página de inicio*/
+    --fondo-inicio: url(Fotos/FondoInicio.webp);
+    /*Tipos de fuente*/
     --fuente-principal: Arial, Helvetica, sans-serif;
     --fuente-titulos: "Times New Roman", serif;
     /*color de letra de la cabecera*/
@@ -111,18 +114,65 @@ header{
     color: var(--color-letra-hr);
 }
 
+header h2 {
+    color: var(--color-letra-hr);
+    margin-bottom: 0;
+}
+
 .sub{
     color: var(--color-letra-p);
     font-size: 0.5em;
     font-family: var(--fuente-principal);
 }
 
+p{
+    text-indent: 1rem;
+}
+
 /*Parte de Tania*/
+
+.portada{
+    background: var(--fondo-inicio);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.arriba{
+    background-color: var(--color-letra-s);
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+
+.abajo{
+    color: var(--color-letra-p);
+    font-size: 0.5em;
+    font-family: var(--fuente-principal);
+    text-align: var(--posicion-t);
+    margin-top: 0;
+    background-color: var(--color-letra-s);
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
 
 main{
     text-align: var(--posicion-p);
     font-family: var(--fuente-principal);
     color: var(--color-letra-p)
+}
+
+.inicio-main{
+    background-color: var(--color-letra-s);
+    margin-right: 20rem;
+    margin-left: 20rem;
+}
+
+.titulos-inicio{
+    font-family: var(--fuente-titulos);
 }
 
 .secciones{
@@ -368,4 +418,5 @@ h1 {
     background-position: center; 
     background-repeat: no-repeat      
 } 
+
 
