@@ -473,3 +473,10 @@ h1 {
     border: none !important;
     cursor: default;
 }
+footer{
+    background-color: var(--color-letra-hr);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top:50px;
+}
