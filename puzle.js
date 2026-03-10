@@ -1,3 +1,8 @@
+ // JavaScript para el puzle
+ //he usado  sistema drag and drop del navegador, para arrastar y
+ // dejar la imagen, usando el data-id para no ser repetitivo con
+ //  los id
+ 
  const piezas = document.querySelectorAll('.pieza');
         const huecos = document.querySelectorAll('.hueco');
         const tablero = document.getElementById('tablero');
@@ -32,4 +37,12 @@
             }
         });
     });
-    
+// un contador de votos utilizando textContent para mostrar el numero de votos,
+//  y un evento click para incrementar el contador cada vez que se pulse el boton votar
+    const btn= document.getElementById('votar');
+    const contador = document.getElementById('contador');
+    let votos = 0;
+    btn.addEventListener('click', () => {
+        votos++;
+        contador.textContent = votos;
+    });
