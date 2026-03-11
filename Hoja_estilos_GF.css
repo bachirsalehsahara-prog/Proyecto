@@ -273,6 +273,8 @@ iframe{
     height: 400px;
 }
 
+/*Parte de Pablo*/
+
 .contenedorEvento{
     display:flex;
     max-width: 75em;
@@ -318,6 +320,17 @@ iframe{
 .descripcionEvento{
     line-height: 1.6;
     color: #444;
+}
+
+#textoHover{
+    position: absolute;
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 0.4em, 0.7em;
+    border-radius: 15%;
+    pointer-events: none;
+    z-index: 10;
 }
 
 /* PARTE DE BACHIR */
