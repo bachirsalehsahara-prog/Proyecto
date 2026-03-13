@@ -47,31 +47,6 @@ header .logo span{
     color: var(--color-letra-t);
 }
 
-header nav{
-    background-color: var(--color-letra-hr);
-    margin-top: 15px;
-    padding: 10px 0;
-}
-
-header nav ul{
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: var(--color-letra-s);
-    font-family: var(--fuente-principal);
-    padding: 10px 20px;
-}
-
-header nav ul li a:hover{
-    color: var(--color-letra-t);
-}
   
 .comparsas-header{
     text-align: var(--posicion-t);
