@@ -6,7 +6,7 @@
 
 :root {
     --fuente-principal: arial, helvetica, sans-serif;
-    --fuente-titulos: "Times New Roman", serfi;
+    --fuente-titulos: "Times New Roman", serif;
     --color-letra-hr: #8b1538;
     --color-letra-t: hsl(53, 55%, 47%);
     --color-letra-p: black;
