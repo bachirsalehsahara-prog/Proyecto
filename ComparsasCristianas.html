@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Hoja_estilos_GF.css">
     <link rel="stylesheet" href="Estilo_Comparsas.css">
     <script src="PuzzleAlex.js" defer></script>
+    <script src="Carrusel.js" defer></script>
     <title>Comparsas Cristianas y Moras</title>
 </head>
 <body>
@@ -171,6 +172,27 @@
             <button class="puzzle-boton" id="puzzleReiniciar">Reiniciar</button>
         </section>
         
-    <footer>Fiestas Mayores de Almansa - Tradición viva de Castilla-La Mancha</footer>
+        <section class="galeria-section" id="galeria">
+            <h2>Galería de fotos</h2>
+            <p>Fotos de las fiestas Mayores de Almansa</p>
+            <div class="galeria">
+                <div class="principal">
+                    <img class="img-principal" id="imagenCarrusel" src="Imagenes/fotocarrusel1.jpg" alt="Foto 1">
+                </div>
+                <div class="controles">
+                    <button class="anterior" id="btnAnterior">Anterior</button>
+                    <button class="siguiente" id="btnSiguiente">Siguiente</button>
+                </div>
+                <div class="miniaturas">
+                    <img class="mini activa" src="Imagenes/fotocarrusel1.jpg" data-indice="0" alt="Foto 1">
+                    <img class="mini" src="Imagenes/fotocarrusel2.jpg" data-indice="1" alt="Foto 2">
+                    <img class="mini" src="Imagenes/fotocarrusel3.jpg" data-indice="2" alt="Foto 3">
+                    <img class="mini" src="Imagenes/fotocarrusel4.jpg" data-indice="3" alt="Foto 4">
+                    <img class="mini" src="Imagenes/fotocarrusel5.jpg" data-indice="4" alt="Foto 5">
+                    <img class="mini" src="Imagenes/fotocarrusel6.jpg" data-indice="5" alt="Foto 6">
+                    </div>
+                </div>
+        </section>
+    <footer>Fiestas  Mayores de Almansa - Comparsas Moras y Cristianas</footer>
 </body>
 </html>

@@ -21,11 +21,15 @@ header {
     text-align: var(--posicion-t);
     font-family: var(--fuente-titulos);
     padding: 20px;
+    padding-top: 80px;
 }
 
 header h1 {
     font-size: 3rem;
     margin: 0;
+    background-image: none !important;
+    background: none !important;
+    padding: 20px;
 }
 
 header h3{
@@ -46,7 +50,6 @@ header .logo{
 header .logo span{
     color: var(--color-letra-t);
 }
-
   
 .comparsas-header{
     text-align: var(--posicion-t);
@@ -229,4 +232,11 @@ footer{
 
 .puzzle-boton:hover{
     background-color: var(--color-letra-t);
+}
+
+.galeria-section p{
+    text-align: var(--posicion-t);
+    font-family: var(--fuente-principal);
+    color: var(--color-letra-p);
+    margin-bottom: 20px;
 }
