@@ -11,7 +11,7 @@
 
         piezas.forEach(pieza => {
             pieza.addEventListener('dragstart', (e) => {
-                piezaSeleccionada = pieza;
+                piezaSeleccionada = pieza;//guardamos la referencia de la pieza que se esta arrastrando
             });
         });
         huecos.forEach(hueco => {
@@ -23,16 +23,17 @@
             e.preventDefault();
             const idPieza = piezaSeleccionada.getAttribute('data-id');
             const idHueco = hueco.getAttribute('data-id');
+            //comparamos id del la pieza con el hueco
             if (idPieza === idHueco) {
                 hueco.innerHTML = "";
                 hueco.appendChild(piezaSeleccionada);
                 piezaSeleccionada.style.width= "100%";
                 piezaSeleccionada.style.height= "100%";
                 piezaSeleccionada.draggable= false;
-                piezaSeleccionada.classList.add('encajada');
+                piezaSeleccionada.classList.add('encajada');//bloqueamos la pieza para que no se pueda mover y añadimos una clase para marcarla como encajada
 
                 victoria();
-            }else{
+            }else{//si no coinciden mostramos un mensaje de error
                 alert("esta pieza no va ahi");
             }
         });

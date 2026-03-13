@@ -370,6 +370,7 @@ iframe{
     margin-top: 10px;
     font-size:1.1rem;
 }
+/*usamos hijos pares para alternr la dirección de las tarjetas*/
 .Historia_I:nth-child(even) .Historia_card{
     flex-direction: row-reverse;
 }
@@ -405,6 +406,8 @@ iframe{
     padding: 25px 20px;
     transition: transform 0.3s ease;
 }
+/*usamos el transform para que al pasar el ratón por encima de la tarjeta se eleve ligeramente y
+ se añada una sombra más intensa para dar un efecto de profundidad*/
 .Acto_card:hover{
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
@@ -444,7 +447,7 @@ h1 {
 #tablero {
     width: 400px;
     height: 400px;
-    display: grid;
+    display: grid;/*utilizamos el grid para darle tamaño exato a tablero donde se alojan las piezas*/
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px;
     border: 5px solid #8b1538; 
@@ -470,7 +473,7 @@ h1 {
     width: 100px;
     height: 100px;
     border: 2px solid #333;
-    cursor: grab;
+    cursor: grab; /*indicamos que las piezas se pueden arrastrar*/
     background-size: 200px 200px;
 }
 
@@ -484,7 +487,20 @@ h1 {
     width: 100% !important;
     height: 100% !important;
     border: none !important;
-    cursor: default;
+    cursor: default;/*cuando una pieza está encajada, no se puede arrastrar y se ajusta al tamaño del hueco*/
+}
+#votar {
+    background-color: #8b1538;
+    color: #ffffff;
+    border: 2px solid #8b1538;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#votar:hover {
+    background-color: #ffffff;
+    color: #8b1538;
 }
 footer{
     background-color: var(--color-letra-hr);
